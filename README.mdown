@@ -173,7 +173,7 @@ Create the Static Library Target
 
 ### Step 1: Create a New "Cocoa Touch Static Library" Project
 
-![](https://github.com/AbdullahDiaa/iOS-Framework/raw/master/gfx/newstaticlib.png)
+![New Static Library](https://github.com/AbdullahDiaa/iOS-Framework/raw/master/gfx/newstaticlib.png)
 
 The product name will be the name of your framework. For example, `Serenity` will generate
 `Serenity.framework` once we've set up the project.
@@ -209,15 +209,12 @@ Click on Add Build Phase > Add Copy Headers.
 **Xcode 5:**
 Add Build Phases from the menu. Click on Editor > Add Build Phase -> Add Copy Headers Build Phase. Note: If the menu options are grayed out, you'll need to click on the whitespace below the Build Phases to regain focus and retry.
 
-You'll see 3 sections for Public, Private, and Project headers. To modify the scope of any header, drag and drop the header files between the sections. Alternatively you can open the Project Navigator and select the header. Next expand the Utilities pane for the File Inspector.
-![](https://github.com/jverkoey/iOS-Framework/raw/master/gfx/utilitiesbutton.png)
-(Cmd+Option+0).
+**Xcode 6:**
+Click on add icon [+]. Click on **New Headers Phase** from the menu.
+![New Headers Phase](https://github.com/AbdullahDiaa/iOS-Framework/raw/master/gfx/newheadersphase.png)
 
-Look at the "Target Membership" group and ensure that the checkbox next to the .h file is checked.
-Change the scope of the header from "Project" to "Public". You might have to uncheck and check the box to get the dropdown list. This will ensure that the header gets
-copied to the correct location in the copy headers phase.
 
-![](https://github.com/jverkoey/iOS-Framework/raw/master/gfx/publicheaders.png)
+You'll see 3 sections for Public, Private, and Project headers. To modify the scope of any header, drag and drop the header files between the sections.
 
 ### Step 3: Update the Public Headers Location
 
