@@ -339,7 +339,7 @@ Click File > New > Target > iOS > Other and create a new Aggregate target. Title
 
 Add the static library target to the "Target Dependencies".
 
-![](https://github.com/jverkoey/iOS-Framework/raw/master/gfx/targetdependencies.png)
+![](https://github.com/AbdullahDiaa/iOS-Framework/raw/master/gfx/targetdependencies.png)
 
 ### Step 3: Build the Other Platform
 
