@@ -222,10 +222,10 @@ By default the static library project will copy private and public headers to th
 `/usr/local/include`. To avoid mistakenly copying private headers to our framework we want to ensure
 that our public headers are copied to a separate directory, e.g. `$(PROJECT_NAME)Headers`. To change this setting,
 select the project in the Project Navigator and then click the "Build Settings" tab. Search for "public
-headers" and then set the "Public Headers Folder Path" to "$(PROJECT_NAME)Headers" for all configurations.
+headers" and then set the **"Public Headers Folder Path"** to `"$(PROJECT_NAME)Headers"` for all configurations.
 If you are working with multiple Frameworks make sure that this folder is unique.
 
-![](https://github.com/jverkoey/iOS-Framework/raw/master/gfx/publicheadersconfig.png)
+![](https://github.com/AbdullahDiaa/iOS-Framework/raw/master/gfx/publicheadersconfig.png)
 
 ### Ongoing Step: Adding New Sources to the Framework
 
@@ -248,8 +248,9 @@ linking to the framework. To disable code stripping we must modify the following
 settings:
 
     "Dead Code Stripping" => No (for all settings)
-    "Strip Debug Symbols During Copy" => No (for all settings)
     "Strip Style" => Non-Global Symbols (for all settings)
+	"Strip Debug Symbols During Copy" => No (for all settings)
+
 
 ### Step 5: Enable all architecture support
 
