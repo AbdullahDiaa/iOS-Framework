@@ -173,7 +173,7 @@ Create the Static Library Target
 
 ### Step 1: Create a New "Cocoa Touch Static Library" Project
 
-![](https://github.com/jverkoey/iOS-Framework/raw/master/gfx/newstaticlib.png)
+![](https://github.com/AbdullahDiaa/iOS-Framework/raw/master/gfx/newstaticlib.png)
 
 The product name will be the name of your framework. For example, `Serenity` will generate
 `Serenity.framework` once we've set up the project.
